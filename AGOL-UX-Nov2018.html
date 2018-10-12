@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>ArcGIS Online better UX</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />		
+		<style>         
+		h1 {               
+			padding: 15% 5% 0% 5%;
+			text-align: center;
+			color:#003865;
+			font: 4.5em Verdana;
+		}
+		h2 {               
+			color:#003865;
+			font: 1.5em Verdana;
+		}
+		h3 {               
+			text-align: center;
+			color:#003865;
+			font: 3em Verdana;
+		}
+		li {
+		  margin: 20px 0;
+		}
+		i {
+			font: 0.7em Georgia;
+		}
+		iframe {
+			width:100%; 
+			height:70%;
+		}
+		.slide {               
+			height: 100vh; 
+			width:  100vw; 
+			<!--
+			border-style: solid;
+			border-width: 2px;
+			-->
+		}
+		.content {               
+			height: 100%; 
+			width:  90%; 
+			padding: 0% 5% 0% 5%;
+			font: 1.75em Georgia;
+			<!--
+			border-style: dashed;
+			border-width: 1px;
+			-->
+		}
+		.content-center {               
+			height: 100%; 
+			width:  90%; 
+			padding: 0% 5% 0% 5%;
+			font: 1.75em Georgia;
+			text-align: center;
+		}
+		.text-block {               
+			max-width:  60%; 
+			padding: 0% 5% 0% 5%;
+		}
+		.slide-img {
+			width: 40%;
+			max-height: 75%;
+		}
+		.logo {
+			padding: 0% 0% 0% 0%;
+			float: right;
+		}
+		</style>
+    </head>
+	<body>
+	<div class='slide' >
+		<h1>ArcGIS Communication Online</h1>
+		<h3>Maximizing the user experience</h3>
+		<div class='content-center'>
+			<p>Jason Ewert</p>
+			<p>November 2018</p>
+			<img src="files/state-logo.png"></img>
+		</div>
+	</div>
+	<div class='slide' >
+		<div class='content'>
+			<img class='logo' src="files/state-logo.png"></img>
+			<h2 >Topics</h2>
+			<div class='text-block'>
+				<ul>
+					<li>AGOL Web App Builder & Story Maps</li>
+					<li>Organization of functionality</li>
+					<li>Organization of content</li>
+					<li>Writing for the web</li>
+					<li>Search Engine Optimization (SEO)</li>
+					<li>Style guides</li>
+					<li>Resources</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- what is UX -->
+	<div class='slide' >
+		<div class='content'>
+			<img class='logo' src="files/state-logo.png"></img>
+			<h2 >What is UX?</h2>
+			<div class='text-block'>
+				<p>Designing the User Experience (UX) requires prioritizing not just usability and desirability but credibility, assessibility, findability, usefulness, and ultimately value.</p>
+			</div>
+			<img class='slide-img' src='files/honeycomb.jpg'></img>
+		</div>
+	</div>
+	<div class='slide'>
+		<div class='content'>
+			<img class='logo' src="files/state-logo.png"></img>
+			<h2>What is UX?</h2>
+			<div class='text-block'>
+				<p>Let's pick on Esri for a second.</p>
+			</div>
+			<img class='slide-img' src='files/esri_effective_storytelling_complex.png'></img> vs.     
+			<img class='slide-img' src='files/esri_effective_storytelling_simple.png'></img>
+		</div>
+	</div>
+	<div class='slide'>
+		<div class='content'>
+			<h2>What is UX?</h2>
+			<img class='logo' src="files/state-logo.png"></img>
+			<div class='text-block'>
+				<p>MediaWiki</p>
+				<p>Wikipedia: useful, usable, valuable, accessible, and findable. Credible?</p>
+			</div>
+			<iframe src="https://en.wikipedia.org/wiki/User_experience_design"></iframe>
+		</div>
+	</div>
+<!-- Apps and Story Maps-->
+	<div class='slide'>
+		<div class='content'>
+			<img class='logo' src="files/state-logo.png"></img>
+			<h2>UX - Esri's Web App Builder</h2>
+			<div class='text-block'>
+				<p><b>flat content</b> What you see is what you get. A web map/ web GIS like this is a choose your own adventure approach to information distribution.</p>
+			</div>
+			<iframe src="https://mpca.maps.arcgis.com/apps/webappviewer/index.html?id=c3ad23220f60416fadcc117f82ba05e3"></iframe>
+		</div>
+	</div>
+	<div class='slide' >
+		<div class='content'>
+			<img class='logo' src="files/state-logo.png"></img>
+			<h2>UX - Tabbed content</h2>
+			<div class='text-block'>
+				<p><b>linear buckets</b> A content buckets that imply an order but don't restrict the user to that order.</p>
+			</div>
+			<iframe src="https://mpca.maps.arcgis.com/apps/MapSeries/index.html?appid=ed2c13f8cb2b473bb07cea00879f286e"></iframe>
+		</div>
+	</div>
+	<div class='slide' >
+		<div class='content'>
+			<img class='logo' src="files/state-logo.png"></img>
+			<h2 >UX - Cascading narrative content</h2>
+			<p><b>linear story</b> A progressive narrative story with a start and end.</p>
+			<iframe src="https://nation.maps.arcgis.com/apps/Cascade/index.html?appid=a716e267eec14825ae9d5b4b4c4f63b7"></iframe>
+		</div>
+	</div>
+	<div class='slide' >
+		<div class='content'>
+			<img class='logo' src="files/state-logo.png"></img>
+			<h2>Cascading content gone wrong</h2>
+			<p> Don't do this!</p>
+			<iframe src="https://mpca.maps.arcgis.com/apps/Cascade/index.html?appid=e7f359c7b5d443a080c6290ffa2f7838"></iframe>
+		</div>
+	</div>
+	<!-- Organization of functionality -->
+	<div class='slide' >
+		<div class='content'>
+			<img class='logo' src="files/state-logo.png"></img>
+			<h2>Functionality - primary tasks</h2>
+			<div class='text-block'>
+				<p>What is the primary task or activity that your user came to do? Does your application do this?</p>
+				<p>Define a primary task or activity. All other functionality is bonus material. (Welcome to the web.)</p>
+				<p>Bonus is good! We want this additional engagement with our app but the only way to get it is to nail the primary objective.</p> 
+			</div>
+		</div>
+	</div>
+	<div class='slide' >
+		<div class='content'>
+			<img class='logo' src="files/state-logo.png"></img>
+			<h2>Functionality - primary tasks</h2>
+			<div class='text-block'>
+				<ul>
+					<li>Who is your audience?</li>
+					<li>What is the purpose of your page? </li>
+					<li>How could your current content better achieve that?</li>
+					<li>What is the primary task, or most common task, a user of the page will do?</li>
+					<li>Are there secondary tasks? What portion of users will come for those tasks?</li>
+					<li>Have you received specific feedback from your users that should be considered?</li>
+				</ul> 
+				<p><i>MPCA Communications Team guidelines</i></p>
+			</div>
+		</div>
+	</div>
+	<div class='slide' >
+		<div class='content'>
+			<img class='logo' src="files/state-logo.png"></img>
+			<h2>Functionality - primary tasks</h2>
+				<p>Primary task: find your body of water</p>
+				<iframe src="https://cf.pca.state.mn.us/water/watershedweb/wdip/index.cfm"></iframe>
+		</div>
+	</div>
+	<div class='slide' >
+		<div class='content'>
+			<img class='logo' src="files/state-logo.png"></img>
+			<h2>Functionality - secondary tasks</h2>
+			<div class='text-block'>
+				<p>Are your secondary tasks getting in the way of the primary objective?</p>
+				<p>Secondary functionality should always complement the primary task, be well thought out, function smoothly, and never impede the primary functionality.</p>
+				<p> For example, links should take the user to more detailed information and be placed in context. Don't link to someone's home page, link to detailed content that complements subject matter. </p>
+			</div>
+		</div>
+	</div>
+	<div class='slide' >
+		<div class='content'>
+			<img class='logo' src="files/state-logo.png"></img>
+			<h2>Secondary tasks - links</h2>
+			<p>Should I eat the fish?</p>
+			<iframe src="https://cf.pca.state.mn.us/water/watershedweb/wdip/details.cfm?wid=21-0375-00"></iframe>
+		</div>
+	</div>
+	<div class='slide' >
+		<div class='content'>
+			<img class='logo' src="files/state-logo.png"></img>
+			<h2>Personas</h2>
+			<div class='text-block'>
+				<p>Creation of fictional characters with real world, well defined tasks and abilities.</p>
+				<p>Personas can be use to define a user's goals, skills, background, experience. A named persona will create a shared understanding of who the audience is.</p>
+				<p>"Cecil the citizen" is an MPCA classic and one of several "general public" personas we've used.</p>
+				<p>Don't fall into the "general public" trap! Personas require detail, be specific.</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Organization of content -->
+	<!--
+	<div class='slide' >
+		<div class='content'>
+			<h2>Content - hierarchy and flow</h2>
+			<div class='text-block'>
+				<p>Some content.</p>
+			</div>
+		</div>
+	</div>
+	<div class='slide' >
+		<div class='content'>
+			<h2>Title</h2>
+			<div class='text-block'>
+				<p>Some content.</p>
+			</div>
+		</div>
+	</div>
+	-->
+	<!-- Writing for the web -->
+	<div class='slide' >
+		<div class='content'>
+			<img class='logo' src="files/state-logo.png"></img>
+			<h2>Writing for the web</h2>
+			<div class='text-block'>
+				<p>Think of writing for the web as opening up information to a wider audience.</p>
+				<ul>
+					<li>Identify your key audience. Who are they and what do they want to know?</li>
+					<li>Put the most important information first and include your topic's keywords.</li>
+					<li>Example: MPCA’s page "Metro Area Chloride Project." A simple title change to “Road salt and water quality” tells visitors more about the “what and why” of the project.</li>
+				</ul>
+				<p>credit: <i>MPCA Communications Team guidelines</i></p>
+			</div>
+		</div>
+	</div>
+	<div class='slide' >
+		<div class='content'>
+			<img class='logo' src="files/state-logo.png"></img>
+			<h2>Writing for the web</h2>
+			<div class='text-block'>
+				<ul>
+					<li>Use plain language: Be concise. Avoid long paragraphs and run-on sentences. Each paragraph should contain one main idea and use simple sentence structure.</li>
+					<li>Use active verbs and avoid passive voice.</li>
+					<li>Avoid jargon and spell out acronyms.</li>
+					<li>Write for visual scanning. Use headings, subheadings, unordered lists, and informative captions.</li>
+					<li>Update often, a web page is only useful if it is up-to-date and informative.</li>
+				</ul>
+				<p>credit: <i>MPCA Communications Team guidelines</i></p>
+				<p><i>"If I had more time I'd have written less." <a href="https://quoteinvestigator.com/2012/04/28/shorter-letter/" target='blank_'>Blaise Pascal</a>, B. Franklin, M. Twain, et.al.</i></p>
+			</div>
+		</div>
+	</div>
+	<!--
+	<div class='slide' >
+		<div class='content'>
+			<h2>Writing for the web - keywords</h2>
+			<div class='text-block'>
+				<p>Some content.</p>
+			</div>
+		</div>
+	</div>
+	-->
+	<!-- SEO -->
+	<div class='slide' >
+		<div class='content'>
+			<img class='logo' src="files/state-logo.png"></img>
+			<h2>Search Engine Optimization</h2>
+			<div class='text-block'>
+				<p>How do people find information?</p>
+				<ul>
+					<li>Topics have keywords. Use them often.</li>
+					<li>Applications are not topics.</li>
+					<li>Applications live within larger contextual resources like, web sites, organizations, and messaging/ advertising campaigns. </li>
+					<li>Inbound and out bound links drive search engine algorithms. Where are people going to find information on your topic? Put your links there.</li>
+					<li>Integrate keywords into your message.</li>
+					<li>Use Google's predictive search to research keywords.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class='slide' >
+		<div class='content'>
+			<img class='logo' src="files/state-logo.png"></img>
+			<h2>Search Engine Optimization</h2>
+			<p>When to use an AGOL Story Map vs. a Mothership web page?</p>
+			<p>Domain names drive visibility on the web.</p>
+			<p>agency.state.mn.us vs. agency.maps.arcgis.com</p>
+			<div width=100% height =75% >
+				<img class='slide-img' src="files/mothership_example.png"></img>
+				<img class='slide-img' src='files/storymap_example.png'></img>
+			</div>
+		</div>
+	</div>
+	<div class='slide' >
+		<div class='content'>
+			<img class='logo' src="files/state-logo.png"></img>
+			<h2>Accessibility</h2>
+			<div class='text-block'>
+				<p>“Accessibility is more than alt reading of text/image -- there's a substantial portion on required dexterity, being able to click on a point.” – Glenn Meyer, MPCA Communications</p>
+				<p>Web maps are inherently difficult from an accessibility standpoint. While some things can be done to address this, it’s best to:</p>
+				<ul>
+					<li>Supplement the map with a description and/or table</li>
+					<li>Keep the user within a single accessibility paradigm. By “accessibility paradigm” I mean, don’t make them jump back and forth between websites that may provide different solutions to accessibility issues.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		<!-- Style guides -->
+	<div class='slide' >
+		<div class='content'>
+			<h2>Style Guides</h2>
+			<iframe src="https://mn.gov/portal/brand/style-guide/"></iframe>
+		</div>
+	</div>
+	<div class='slide' >
+		<div class='content'>
+			<h2>Applying a style guide</h2>
+			<iframe src="https://mpca.maps.arcgis.com/apps/webappviewer/index.html?id=747c344d0c7f416eb8429a46be9be1cb"></iframe>
+		</div>
+	</div>
+	<!-- do your homework -->
+	<div class='slide' >
+		<div class='content'>
+			<img class='logo' src="files/state-logo.png"></img>
+			<h2>Know your competition</h2>
+			<div class='text-block'>
+				<p>This is your only opportunity to experience a similar site for the first time. Take advantage of it!</p>
+				<ul>
+					<li>WI DNR's <a href='https://dnr.wi.gov/topic/surfacewater/swdv/' target = 'blank_'>Surface Water data Viewer</a></li>
+					<li>EPA's <a href='https://www3.epa.gov/enviro/' target = 'blank_'>Envirofacts</a></li>
+				</ul>
+				<ul>
+					<li>What do you like? Dislike? </li>
+					<li>What did you read? Skip over? </li>
+					<li>How would you improve the experience?</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Resources -->
+	<div class='slide' >
+		<div class='content'>
+			<img class='logo' src="files/state-logo.png"></img>
+			<h2>Resources</h2>
+			<div class='text-block'>
+				<p><a href='https://www.usability.gov/' target = 'blank_'>usability.gov</a> </p>
+				<p><a href='http://semanticstudios.com/user_experience_design/' target = 'blank_'> User experience design</a>Peter Morville and the UX honeycomb</p>
+				<p><a href='https://intertwingled.org/user-experience-honeycomb/' target = 'blank_'>intertwingled.org</a> An update from Morville</p>
+				<p><a href='http://www.uxbooth.com/articles/8-must-see-ux-diagrams/' target = 'blank_'>8 UX info graphics!</a> Everyone loves a list. :)</p>
+				
+				<p><a href='https://www.esri.com/arcgis-blog/products/story-maps/sharing-collaboration/new-accessibility-features-in-story-map-journal/' target = 'blank_'>accessibility in Story Map Journal</a></p>				
+				<p><a href='https://mn.gov/portal/brand/' target = 'blank_'>the State brand and style guide</a></p>
+				<p><a href='https://www.flickr.com/photos/mpcaphotos/' target = 'blank_'>MPCA on Flicker</a></p>
+				
+				<p><a href='http://www.hemingwayapp.com/' target = 'blank_'>the Hemingway Editor</a></p>
+				<p><a href='https://github.com/maptime/map-accessibility-guidelines' target = 'blank_'></a></p>
+				<p><a href='https://github.com/maptime/map-accessibility-guidelines/blob/master/BestPractices.md' target = 'blank_'>Accessibility best practices</a> from #MapTime!</p>
+				<p><a href='' target = 'blank_'>some link</a></p>
+				<p><a href='' target = 'blank_'>some link</a></p>
+				<!-- that's about the length of list that will fit on a slide. -->
+			</div>
+		</div>
+	</div>
+	<div class='slide' >
+		<h1></h1>
+		<h3>"Good design makes hard things easy."</h3>
+		<div class='content-center'>
+			<p>- François Chollet</p>
+			</br>
+		</div>
+	</div>
+	<div class='slide' >
+		<div class='content'>
+			<h2>Affirmations and other heuristics</h2>
+			<div class=''>
+				<p>Good design makes hard things easy.</p>
+				<p>Keep a bias toward simplicity.</p>
+				<p>It’s okay to say no, just because someone asks for a feature doesn’t mean you should do it. Every feature has a cost that goes beyond the initial implementation: maintenance cost, documentation cost, and cognitive cost for your users. Always ask: Should we really do this? Often, the answer is simply no.</p>
+				<p>When you say yes to a request for supporting a new use case, remember that literally adding what the user requested is often not the optimal choice. Users are focused on their own specific use case, and you must counter this with a holistic and principled vision of the whole project. Often, the right answer is to extend an existing feature.</p>
+				<p>Always seek to minimize the cognitive load imposed on your users in the course of using your API. Automate what can be automated, minimize the actions and choices needed from the user, don’t expose options that are unimportant, design simple and consistent workflows. </p>
+				<p>Deliberately design end-to-end workflows, not a set of atomic features. Most developers approach API design by asking: What capabilities should be available? Let’s have configuration options for them. Instead, ask: What are the use cases for this tool? For each use case, what is the optimal sequence of user actions? What’s the easiest API that could support this workflow?</p>
+				<p><i>Not original content! These are all quotes from the following article, which I clearly enjoyed and agree with. <a href='https://medium.com/s/story/notes-to-myself-on-software-engineering-c890f16f4e4d' target = 'blank_'>Notes on software engineering</a> - <a href='https://medium.com/@francois.chollet' target='blank_'>François Chollet</a></i></p>
+				<p><i>Enjoy, and thanks for hanging out with me today! - Jason (jason.ewert@state.mn.us)</i></p>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>	
